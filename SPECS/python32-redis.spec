@@ -17,7 +17,7 @@ Summary:        A Python client for redis
 Group:          Development/Languages
 License:        MIT
 URL:            http://github.com/andymccurdy/redis-py
-Source0:        http://pypi.python.org/packages/source/r/redis/%{upstream_name}-%{version}.tar.gz
+Source0:        https://pypi.python.org/packages/source/r/redis/%{upstream_name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
@@ -48,6 +48,7 @@ rm -rf %{buildroot}
 %changelog
 * Mon Apr 29 2013 Ben Harper <ben.harper@rackspace.com> - 2.7.4-1.ius
 - update to 2.7.4
+- updated Source0 URL
 
 * Tue Apr 23 2013 Ben Harper <ben.harper@rackspace.com> - 2.7.3-1.ius
 - update to 2.7.3
