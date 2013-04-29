@@ -41,7 +41,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc CHANGES LICENSE README.md
+%doc CHANGES LICENSE
 %{python_sitelib}/%{upstream_name}
 %{python_sitelib}/%{upstream_name}-%{version}-*.egg-info
 
@@ -49,6 +49,7 @@ rm -rf %{buildroot}
 * Mon Apr 29 2013 Ben Harper <ben.harper@rackspace.com> - 2.7.4-1.ius
 - update to 2.7.4
 - updated Source0 URL
+- remove README.md from %doc
 
 * Tue Apr 23 2013 Ben Harper <ben.harper@rackspace.com> - 2.7.3-1.ius
 - update to 2.7.3
