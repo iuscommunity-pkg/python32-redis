@@ -10,7 +10,7 @@
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")}
 
 Name:           %{name}
-Version:        2.9.1
+Version:        2.10.1
 Release:        1.ius%{?dist}
 Summary:        A Python client for redis
 
@@ -46,6 +46,9 @@ rm -rf %{buildroot}
 %{python_sitelib}/%{upstream_name}-%{version}-*.egg-info
 
 %changelog
+* Tue Jun 03 2014 Ben Harper <ben.harper@rackspace.com> - 2.10.1-1.ius
+- Latest sources from upstream
+
 * Fri Jan 24 2014 Ben Harper <ben.harper@rackspace.com> - 2.9.1-1.ius
 - Latest sources from upstream
 
